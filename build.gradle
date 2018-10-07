@@ -5,12 +5,12 @@
  * For more details take a look at the Java Quickstart chapter in the Gradle
  * user guide available at https://docs.gradle.org/4.10.2/userguide/tutorial_java_projects.html
  */
-
 plugins {
     id 'idea'
 
     id 'java'
     id "org.jetbrains.kotlin.jvm" version "1.2.71"
+    id "org.jetbrains.kotlin.plugin.spring" version "1.2.71"
 
     id "com.gradle.build-scan" version "1.16"
 
@@ -18,8 +18,6 @@ plugins {
     id "io.spring.dependency-management" version "1.0.6.RELEASE"
 }
 
-// Define the main class for the application
-// mainClassName = 'microservices.book.multiplication.Application'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -27,24 +25,35 @@ bootJar {
   version  = "0.0.1-SNAPSHOT"
 }
 
+// In this section define the version numbers for the libraries
+ext {
+    vSpring = "2.0.5.RELEASE"
+    vKotlin = "1.2.71"
+
+    vJunit = "4.12"
+}
+
+// In this section define the dependencies for the application
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-dependencies:2.0.5.RELEASE'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    /**
+     * Implementation dependencies
+     */
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$vKotlin"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$vKotlin"
 
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'junit:junit:4.12'
+    // Spring
+    implementation "org.springframework.boot:spring-boot-dependencies:$vSpring"
+    implementation "org.springframework.boot:spring-boot-starter-web:$vSpring"
 
-    components {
-        withModule('org.springframework:spring-beans') {
-            allVariants {
-                withDependencyConstraints {
-                    // Need to patch constraints because snakeyaml is an optional dependency
-                    it.findAll { it.name == 'snakeyaml' }.each { it.version { strictly '1.19' } }
-                }
-            }
-        }
-    }
+    /**
+     * Test dependencies
+     */
+    // Spring
+    testImplementation "org.springframework.boot:spring-boot-starter-test:$vSpring"
+
+    // JUnit
+    testImplementation "junit:junit:$vJunit"
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -58,12 +67,12 @@ repositories {
 
 compileKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "$targetCompatibility"
     }
 }
 
 compileTestKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "$targetCompatibility"
     }
 }
