@@ -1,8 +1,6 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Java
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<<<<<<< HEAD
-# Adding/Updating gitignore configurations based on the local environment
 *.jar
 *.war
 *.nar
@@ -10,8 +8,6 @@
 *.zip
 *.tar.gz
 *.rar
-=======
->>>>>>> 9b30b201a928c949a020a2c75287b82df446f306
 *.class
 *.log
 local.properties
@@ -26,11 +22,7 @@ proguard/
 captures/
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<<<<<<< HEAD
 # IntelliJ
-=======
-# Android Studio/IntelliJ
->>>>>>> 9b30b201a928c949a020a2c75287b82df446f306
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *~
 *.jks
@@ -47,13 +39,7 @@ captures/
 # Google Services (e.g. APIs or Firebase)
 # google-services.json
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 # IntelliJ
-=======
->>>>>>> Adding/Updating gitignore configurations based on the local environment
-=======
->>>>>>> 9b30b201a928c949a020a2c75287b82df446f306
 /*/build/
 /*/local.properties
 /*/out
