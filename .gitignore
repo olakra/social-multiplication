@@ -1,0 +1,101 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Android
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*.apk
+*.ap_
+*.dex
+*.class
+*.log
+local.properties
+
+bin/
+gen/
+out/
+.gradle/
+build/
+proguard/
+.navigation/
+captures/
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Android Studio/IntelliJ
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*~
+*.jks
+*.iml
+*.ipr
+*.iws
+*.swp
+!/gradle/wrapper/gradle-wrapper.jar
+.idea/
+.idea_modules/
+.signing/
+.externalNativeBuild
+
+# Google Services (e.g. APIs or Firebase)
+# google-services.json
+
+# Android Studio
+/*/build/
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+obj/
+/out/
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# MacOS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+.apdisk
+ehthumbs.db
+Thumbs.db
+Icon
+Network Trash Folder
+Temporary Items
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Eclipse
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.classpath
+.project
+.cproject
+.metadata
+*.tmp
+*.bak
+*~.nib
+.loadpath
+.recommenders
+.target
+.cache-main
+.scala_dependencies
+.worksheet
+.apt_generated
+.settings/
+.sts4-cache/
+.recommenders/
+.apt_generated/
+.externalToolBuilders/
+tmp/
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Gradle
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
