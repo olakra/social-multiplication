@@ -1,9 +1,6 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Android
+# Java
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*.apk
-*.ap_
-*.dex
 *.class
 *.log
 local.properties
@@ -35,7 +32,6 @@ captures/
 # Google Services (e.g. APIs or Firebase)
 # google-services.json
 
-# Android Studio
 /*/build/
 /*/local.properties
 /*/out
@@ -62,6 +58,7 @@ obj/
 .AppleDB
 .AppleDesktop
 .apdisk
+.java-version
 ehthumbs.db
 Thumbs.db
 Icon
