@@ -31,6 +31,8 @@ ext {
     vKotlin = "1.2.71"
 
     vJunit = "4.12"
+    vMockito = "2.23.0"
+    vAssertJ = "3.11.1"
 }
 
 // In this section define the dependencies for the application
@@ -54,6 +56,12 @@ dependencies {
 
     // JUnit
     testImplementation "junit:junit:$vJunit"
+
+    // Mockito
+    testImplementation "org.mockito:mockito-core:$vMockito"
+
+    // AssertJ
+    testImplementation "org.assertj:assertj-core:$vAssertJ"
 }
 
 // In this section you declare where to find the dependencies of your project
