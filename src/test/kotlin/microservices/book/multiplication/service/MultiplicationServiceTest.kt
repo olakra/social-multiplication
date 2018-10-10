@@ -1,4 +1,4 @@
-package microservices.book.multiplication.service.impl
+package microservices.book.multiplication.service
 
 import microservices.book.multiplication.service.MultiplicationService
 import microservices.book.multiplication.service.RandomGeneratorService
@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @SpringBootTest
-class MultiplicationServiceImplTest {
+class MultiplicationServiceTest {
 
     @MockBean
     lateinit var randomGeneratorService: RandomGeneratorService
